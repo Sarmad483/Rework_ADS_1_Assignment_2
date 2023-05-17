@@ -7,6 +7,20 @@
 import pandas as pd
 
 def read_worldbank_data(url):
+    """
+    Read World Bank data from a CSV file and process it into two dataframes.
+
+    Args:
+        url (str): The URL or file path of the CSV file.
+
+    Returns:
+        tuple: A tuple containing two dataframes: years_df and countries_df.
+            - years_df: A dataframe containing the years extracted from the CSV file.
+            - countries_df: A dataframe with countries as rows and indicators, years, and values as columns.
+    """
+
+    
+def read_worldbank_data(url):
     # Read the CSV file, skipping the metadata rows
     df = pd.read_csv(url, skiprows=3)
 
